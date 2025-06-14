@@ -1,0 +1,7 @@
+from collections import Counter
+
+with open('sample.txt', 'r') as file:
+    words = file.read().split()
+
+freq = Counter(words)
+print(freq.most_common(5))
